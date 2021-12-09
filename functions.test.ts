@@ -1,21 +1,20 @@
 const {shuffleArray} = require('./utils')
-const testerArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
     // CODE HERE. Write at least 2 more tests for the game.
 
 describe('shuffleArray should', () => {
     //Test #1
-    test('returns an array of the same length as the argument sent in', () => {
-
-        expect(shuffleArray(testerArray).length).toBe(testerArray.length);
-
-    })
+    test('should return array of the same length as the argument sent in', () => {
+        const testArray = [2, 4, 6, 8, 10]
+        const testVar = shuffleArray(testArray)
+        expect(Array.isArray(testVar)).toBe(true)
+    });
 
     //Test #2
-    test('returns an array containing the same items as the original', () => {
-
-        expect(shuffleArray(testerArray).reduce((a, c) => !testerArray.includes(c)?false: a, true)).toBe(true);
-
+    test('should contain all the same items in array ', () => {
+        const testArray = [2, 4, 6, 8, 10]
+        const testVar = shuffleArray(testArray)
+        expect(testArray.length).toEqual(testVar.length);
     })
 })
 
