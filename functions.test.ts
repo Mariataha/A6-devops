@@ -17,6 +17,3 @@ describe('shuffleArray should', () => {
         expect(testArray.length).toEqual(testVar.length);
     })
 })
-
-
-
