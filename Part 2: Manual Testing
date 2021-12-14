@@ -1,0 +1,48 @@
+***Duel Duo Test Plan***
+	Overview
+	Test the functionality of the Duel Duo Game
+	Links:
+	http://localhost:3000/
+	Test Criteria:
+	Test the "See All Bots" button function
+	Spelling and punctuation
+	Make sure links work
+	Easy Navigation
+	Test security http vs https
+	Browser consistency- works on different browsers
+	Entry Criteria:
+	Test Criteria provided
+	running version provided for testing
+	Computer for testing
+	Exit criteria:
+	All high priority tests have passed
+	The allotted time is up
+	Other Details:
+	Environment
+	Should run on any modern browser(post I.E. 8 and similar) and be fully functional
+	Chrome is the recommended browser
+
+
+	***“See All Bots” Test***
+	This test will verify that the "See All Bots" button is functional. 
+	You should click on "See All Bots" and the game is supposed to show all the robots
+	Steps:
+	1. Make sure the server is running
+	2. Navigate to web browser "local host: 3000"
+	3. Click "See All Bots" button at the top the page
+	Test Postconditions:
+	1. When you click the button "See All Bots" it should show all of the robots
+
+
+	***Bug Report***
+	When game is won, the counter should document that and increment as more games are won. When player loses a game, the loss counter should note that and increment
+	Steps to Reproduce:
+	1. Navigate to webpage
+	2. Click "Draw"
+	3. Choose 2 bots and Duel until you win
+	Expected Result:
+	User should see increment in "Wins" every time they win a duel
+	Actual Result:
+	User sees no change when game is won, point is not registered/ documented
+	Environment:
+	Chrome Version 95.0.4638.69 (Official Build) (x86_64)
